@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Travel Recommendation</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+  </head>
+  <body>
+    <nav id="navBar">
+      <a href="#" id="logo"
+        ><img src="images/airplane-logo.png" alt="Airplane Logo"
+      /></a>
+
+      <form action="#" method="get" id="searchForm">
+
+        <input type="text" id="searchInput" placeholder="Search..." />
+        <button id="searchBtn">Search</button>
+      </form>
+      <ul id="navLinks">
+        <li><a href="travelRecommendation.html">Home</a></li>
+        <li><a href="aboutus.html">About Us</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+      </ul>
+    </nav>
+    <main>
+      <div id="myModal" class="modal">
+        <div class="modal-content">
+          <span class="close">&times;</span>
+          <div id="modalBody"></div>
+        </div>
+      </div>
+      <div class="hero">
+        <div class="heroText">
+          <h1>Top Travel Destinations 2024</h1>
+          <p>Your adventure begins here</p>
+          <a href="#" id="bookNowBtn">BOOK NOW</a>
+        </div>
+      </div>
+      <div class="photogSource">Felix Mittermeier Photography</div>
+
+      <div class="articles">
+        <h2 class="articlesTitle">Editor's Picks</h2>
+        <div class="articleLinks">
+          <div class="articleLink">
+            <div class="ArticleImageContainer">
+              <img
+                class="articleImage"
+                src="images/skull-ancient-naples-italy.jpg"
+              />
+            </div>
+            <h3 class="articleLabel">
+              Discover Naples: The Historic Heart of Italy's Campania Region
+            </h3>
+          </div>
+          <div class="articleLink">
+            <div class="ArticleImageContainer">
+              <img
+                class="articleImage"
+                src="images/raas-nicuragua-beach-travel.jpg"
+              />
+            </div>
+            <h3 class="articleLabel">
+              Serene Beaches of Raas: Nicaragua's Hidden Coastal Gems
+            </h3>
+          </div>
+          <div class="articleLink">
+            <div class="ArticleImageContainer">
+              <img
+                class="articleImage"
+                src="images/honolulu-hawaii-beach-sunset-tree-man-travel.jpg"
+              />
+            </div>
+            <h3 class="articleLabel">
+              Vibrant Culture and Stunning Beaches: Honolulu, Hawaii.
+            </h3>
+          </div>
+        </div>
+        <div class="aboutTextHome">
+          <h3>About Bloom</h3>
+          <p>
+            Welcome to Bloom, your ultimate travel companion! Whether you are a
+            seasoned globetrotter or planning your first adventure, Bloom is
+            here to inspire and guide you every step of the way. Our mission is
+            to provide comprehensive, up-to-date travel recommendations and
+            information that cater to all types of travelers. From serene beach
+            getaways to bustling city breaks, from solo expeditions to family
+            vacations, Bloom has got you covered.
+          </p>
+
+          <h3>Our Mission</h3>
+          <p>
+            At Bloom, we believe that travel has the power to transform lives.
+            Our goal is to make travel accessible, enjoyable, and enriching for
+            everyone. We are dedicated to offering personalized travel
+            recommendations based on your preferences and interests. Our team of
+            travel enthusiasts and experts is committed to curating the best
+            travel experiences, ensuring that each journey is memorable and
+            hassle-free.
+          </p>
+          <h3>What We Offer</h3>
+          <p>
+            <span class="boldSpan">In-Depth Destination Guides:</span>
+            Discover the best places to visit with our detailed destination
+            guides. Learn about the local culture, must-see attractions, hidden
+            gems, and practical tips to make the most of your trip.
+          </p>
+          <p>
+            <span class="boldSpan">Travel Tips and Advice:</span>
+            From packing hacks to safety tips, our travel advice section is
+            packed with useful information to help you travel smarter.
+          </p>
+          <p>
+            <span class="boldSpan">Itineraries:</span> Whether you have a
+            weekend or a month, our meticulously planned itineraries cater to
+            different durations and travel styles.
+          </p>
+          <p>
+            <span class="boldSpan">Travel News and Updates:</span>
+            Stay informed about the latest travel news, trends, and updates that
+            might impact your travel plans.
+          </p>
+          <h3>Join Our Community</h3>
+          <p>
+            Bloom is more than just a website; it's a community of passionate
+            travelers. Join our community to share your travel stories, exchange
+            tips, and connect with like-minded adventurers. Follow us on social
+            media and subscribe to our newsletter to stay updated with the
+            latest travel inspiration and exclusive deals.
+          </p>
+          <h3>
+            <a href="contact.html" class="contactLink">Contact Us</a>
+          </h3>
+          <p>
+            We love hearing from our readers! If you have any questions,
+            feedback, or suggestions, feel free to reach out to us. Your input
+            helps us improve and serve you better.
+          </p>
+          <h5>Disclaimer</h5>
+          <p>
+            All travel recommendations and information provided on Bloom are for
+            general informational purposes only. We strive to ensure the
+            accuracy of the information but cannot guarantee that all details
+            are current or correct. We advise our readers to verify information
+            independently and consult official sources when planning their
+            travels. Bloom is not responsible for any travel-related issues or
+            losses that may occur. About Bloom Thank you for choosing Bloom.
+            Here's to many exciting adventures ahead!
+          </p>
+        </div>
+      </div>
+    </main>
+    <footer class="footer">
+      <div class="footer-container">
+        <div class="footer-logo">
+          <h2>Bloom</h2>
+        </div>
+        <div class="footer-social">
+          <a href="https://facebook.com" target="_blank" class="social-icon"
+            ><i class="fab fa-facebook-f"></i
+          ></a>
+          <a href="https://twitter.com" target="_blank" class="social-icon"
+            ><i class="fab fa-twitter"></i
+          ></a>
+          <a href="https://instagram.com" target="_blank" class="social-icon"
+            ><i class="fab fa-instagram"></i
+          ></a>
+          <a href="https://linkedin.com" target="_blank" class="social-icon"
+            ><i class="fab fa-linkedin-in"></i
+          ></a>
+        </div>
+      </div>
+    </footer>
+    <script src="travel_recommendation.js"></script>
+  </body>
+</html>

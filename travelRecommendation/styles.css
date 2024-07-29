@@ -1,0 +1,461 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body,
+html {
+    height: 100%;
+    font-family: 'Roboto', sans-serif; /* Changed to a more professional font */
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: #f0f0f0; /* Light background for contrast */
+    color: #333; /* Dark text color for readability */
+}
+
+/* Navbar */
+#navBar {
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #4CAF50; /* Updated to a more vibrant color */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Enhanced shadow for depth */
+    position: relative;
+    justify-content: space-between; /* Distribute space between elements */
+}
+
+#navLinks {
+    display: flex;
+    list-style-type: none;
+    margin: 0 auto; /* Center the navbar items */
+}
+
+#navLinks > li {
+    margin: 0 15px; /* Adjusted margin for centering */
+}
+
+#navLinks > li > a {
+    text-decoration: none;
+    color: #fff; /* Light color for better contrast */
+    font-family: 'Montserrat', sans-serif; /* Updated font for nav links */
+    font-weight: 500;
+    transition: color 0.3s; /* Smooth color transition */
+}
+
+#navLinks > li > a:hover {
+    color: #d0f0c0; /* Light color on hover */
+}
+
+#navBar > #logo {
+    display: flex;
+    align-items: center;
+}
+
+#logo img {
+    height: 40px; /* Adjust size as needed */
+    width: auto; /* Maintain aspect ratio */
+}
+
+#searchInput {
+    height: 35px;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    padding: 10px 20px;
+    border: 2px solid #4CAF50;
+    border-radius: 12px;
+    transition: border-color 0.3s, box-shadow 0.3s;
+    width: 100%;
+    max-width: 300px;
+    position: absolute; /* Position the search bar absolutely */
+    right: 20px; /* Move search bar to the right end */
+    top: 50%; /* Center vertically */
+    transform: translateY(-50%); /* Adjust for exact centering */
+}
+
+#searchBtn {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    border-radius: 12px;
+    padding: 7px 15px;
+    font-weight: 600;
+    font-size: 16px;
+    cursor: pointer;
+    position: absolute;
+    right: calc(20px + 300px); /* Position next to the search bar */
+    top: 50%; /* Center vertically */
+    transform: translateY(-50%); /* Adjust for exact centering */
+}
+
+/* Forms */
+form {
+    display: flex;
+    align-items: center;
+}
+
+input,
+textarea {
+    margin: 6px 1px 12px 1px;
+}
+
+#searchInput:focus {
+    border-color: #45a049;
+    box-shadow: 0 0 8px rgba(69, 160, 73, 0.5);
+    outline: none;
+}
+
+#searchInputLbl {
+    margin: 0 0.5rem;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+}
+
+/* Buttons */
+button {
+    background-color: #fff;
+    border-radius: 12px;
+    border: 1px solid #4CAF50;
+    padding: 7px;
+    font-weight: 600;
+    height: 35px;
+    margin: 0 7.5px;
+    text-align: center;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+    line-height: 1.5;
+}
+
+button[type="submit"],
+button[type="reset"] {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+}
+
+button[type="submit"]:hover,
+button[type="reset"]:hover {
+    background-color: #45a049;
+    transform: scale(1.05);
+}
+
+button[type="submit"]:active,
+button[type="reset"]:active {
+    background-color: #3e8e41;
+    transform: scale(1);
+}
+
+#contactBtn {
+    margin: 0 auto;
+    margin-top: 0.5rem;
+    margin-bottom: 0.25rem;
+}
+
+#bookNowBtn {
+    font-style: italic;
+    font-weight: 600;
+    color: #fff;
+    text-decoration: none;
+}
+
+#bookNowBtn:hover {
+    text-decoration: underline;
+    color: #e0e0e0; /* Light color on hover */
+}
+
+/* Hero Section */
+.hero {
+    background-image: url(images/town-night-background-image-home.jpg);
+    height: 60vh;
+    width: 100vw;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    text-align: center;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Enhanced shadow */
+    border-radius: 10px;
+}
+
+.hero::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Darker overlay */
+    border-radius: 10px;
+    z-index: 1;
+}
+
+.heroText {
+    position: relative;
+    z-index: 2;
+    text-align: center;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.heroText h1 {
+    font-size: 3.5em;
+    margin-bottom: 20px;
+    font-family: 'Poppins', sans-serif; /* Updated font for header */
+}
+
+.heroText p {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+    font-family: 'Roboto', sans-serif; /* Updated font for paragraph */
+}
+
+/* Main Content */
+main {
+    flex: 1;
+}
+
+/* Articles Section */
+.articles {
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    max-width: 950px;
+}
+
+.articlesTitle {
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #4CAF50;
+    padding-bottom: 10px;
+    text-align: center;
+    font-family: 'Poppins', sans-serif; /* Updated font for section titles */
+}
+
+.articleLinks {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-between;
+}
+
+.articleLink {
+    flex: 1 1 calc(33% - 20px);
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.articleLink:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.articleImageContainer {
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+}
+
+.articleImageContainer img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.articleLabel {
+    padding: 15px;
+    font-weight: bold;
+    text-align: center;
+    font-family: 'Roboto', sans-serif; /* Consistent font for article labels */
+}
+
+/* Contact Us Section */
+.contactForm {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    margin: 20px auto;
+    background-color: #fff;
+    border-radius: 8px;
+    max-width: 600px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.contactForm label {
+    margin-bottom: 10px;
+    font-weight: bold;
+    font-family: 'Roboto', sans-serif;
+}
+
+.contactForm input,
+.contactForm textarea {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 2px solid #4CAF50;
+    border-radius: 8px;
+    font-size: 16px;
+    box-sizing: border-box;
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.contactForm input:focus,
+.contactForm textarea:focus {
+    border-color: #45a049;
+    box-shadow: 0 0 8px rgba(69, 160, 73, 0.5);
+    outline: none;
+}
+
+.contactForm button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.contactForm button:hover {
+    background-color: #45a049;
+    transform: scale(1.05);
+}
+
+.contactForm button:active {
+    background-color: #3e8e41;
+    transform: scale(1);
+}
+
+/* Footer */
+.footer {
+    background-color: #4CAF50;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.2); /* Enhanced shadow */
+    border-top: 2px solid #fff; /* White border for contrast */
+}
+
+.footer-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer-logo {
+    margin-bottom: 20px;
+    font-size: 1.8rem;
+    font-family: 'Poppins', sans-serif; /* Updated font for footer logo */
+}
+
+.footer-social {
+    display: flex;
+    gap: 20px;
+}
+
+.social-icon {
+    color: #fff;
+    font-size: 24px;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.social-icon:hover {
+    color: #d0f0c0; /* Light color on hover */
+}
+
+/* About Bloom Section */
+.aboutTextHome {
+    padding-top: 150px;
+    text-align: center;
+}
+
+.aboutTextHome h2 {
+    font-size: 2.5rem;
+    font-family: 'Poppins', sans-serif;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.aboutTextHome p {
+    font-size: 1.2rem;
+    font-family: 'Roboto', sans-serif;
+    color: #666;
+    margin-bottom: 15px;
+    line-height: 1.6;
+}
+
+.boldSpan {
+    font-weight: 600;
+}
+
+.contactLink {
+    text-decoration: none;
+    color: inherit;
+}
+
+.contactLink:hover {
+    text-decoration: underline;
+}
+
+.plainLink {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Modal */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 3;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal-content {
+    background-color: #fff;
+    margin: 3% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    max-width: 750px;
+    border-radius: 8px;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+#modalBody {
+    text-align: center;
+}

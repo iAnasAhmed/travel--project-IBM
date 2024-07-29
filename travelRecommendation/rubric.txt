@@ -1,0 +1,39 @@
+(0) add image URL's for all the travel json entries
+(0) use fetch API to fetch travel json entries from file and store as an array of objects
+(0) console.log to view fetched json data
+( ) create search function to search for keywords Beaches, temples, and country names
+    (0) get/store user input
+    (0) sanitize user search input
+    (0) filter through array of travel entries to find matches
+    (0) store matching travel entries in search results array
+    (0) display search results after user clicks search, with image, title, and description
+    ( ) format module better
+    ( ) write function display for no results found on modal
+    ( ) fix modal X closing it
+    ( ) when user clicks "clear" button, search results are cleared from page
+    ( ) fix countries search display
+
+
+Task 10: Country date and time (optional)
+In this optional task, you can create logic in your JavaScript to display the time in the country you recommend.
+
+For Example:
+
+1
+2
+3
+    const options = { timeZone: 'America/New_York', hour12: true, hour: 'numeric', minute: 'numeric', second: 'numeric' };
+    const newYorkTime = new Date().toLocaleTimeString('en-US', options);
+    console.log("Current time in New York:", newYorkTime);
+Copied!
+This JavaScript code retrieves the current time in the New York time zone using the Date object and the toLocaleTimeString method.
+
+const options = { timeZone: 'America/New_York', hour12: true, hour: 'numeric', minute: 'numeric', second: 'numeric' };
+
+timeZone: ‘America/New_York’ sets the time zone to New York. hour12: true specifies that the time should be displayed in 12-hour format (AM/PM).
+hour: ‘numeric’, minute: ‘numeric’, and second: ‘numeric’ indicate that the hour, minute, and second components of the time should be displayed numerically.
+const newYorkTime = new Date().toLocaleTimeString('en-US', options);
+
+new Date() creates a new Date object representing the current date and time.
+toLocaleTimeString(‘en-US’, options) formats the time according to the specified options in the ‘en-US’ locale (English - United States) and the provided options object (options). This method returns a string representing the time in the specified format.
+console.log outputs the string “Current time in New York:” along with the formatted time retrieved in the newYorkTime variable.
